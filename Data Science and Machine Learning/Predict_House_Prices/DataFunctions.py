@@ -16,3 +16,13 @@ def plot_hist(data, num_bins=0):
 def distplot(data):
     sns.distplot(data, hist=False)
     plt.show()
+
+
+def key_stats(data):
+    data = data.describe()
+    print(data)
+
+
+def correlations(data):
+    data = data.corr()
+    print(data)
